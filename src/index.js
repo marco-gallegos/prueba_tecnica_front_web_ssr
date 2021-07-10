@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ContextPruebaProvider } from './context/context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ContextPruebaProvider>
+      <App />
+    </ContextPruebaProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
